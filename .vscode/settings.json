@@ -1,0 +1,12 @@
+{
+  "standard.enable": true,
+  "standard.autoFixOnSave": true,
+  "standard.engine": "ts-standard",
+  "standard.usePackageJson": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
