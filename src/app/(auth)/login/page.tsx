@@ -33,7 +33,7 @@ export default function LoginPage (): JSX.Element {
             Welcome back
           </h1>
           <p className='text-sm text-muted-foreground'>
-            Enter your email to sign in to your account
+            Lets sign in
           </p>
         </div>
         <UserAuthForm />

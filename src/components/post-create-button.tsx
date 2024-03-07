@@ -18,7 +18,7 @@ export function PostCreateButton ({
   const router = useRouter()
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
 
-  async function onClick () {
+  async function onClick (): Promise<void> {
     setIsLoading(true)
 
     const response = await fetch('/api/posts', {
@@ -34,19 +34,12 @@ export function PostCreateButton ({
     setIsLoading(false)
 
     if (!response?.ok) {
-      if (response.status === 402) {
-        return toast({
-          title: 'Limit of 3 posts reached.',
-          description: 'Please upgrade to the PRO plan.',
-          variant: 'destructive'
-        })
-      }
-
-      return toast({
+      toast({
         title: 'Something went wrong.',
         description: 'Your post was not created. Please try again.',
         variant: 'destructive'
       })
+      return
     }
 
     const post = await response.json()

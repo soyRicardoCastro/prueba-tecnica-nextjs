@@ -17,11 +17,10 @@ export default function IndexPage (): JSX.Element {
             Follow along on Twitter
           </Link>
           <h1 className='font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl'>
-            An example app built using Next.js 13 server components.
+            An app built using Next.js 14 server components.
           </h1>
           <p className='max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8'>
-            I&apos;m building a web app with Next.js 13 and open sourcing
-            everything. Follow along as we figure this out together.
+            This website is built using Next.js 14, Typescript, TailwindCSS, Prisma, Postgresql, Vercel, NextAuth, EditorJS, React-Day-Picker, React-Textarea-Autosize, and more.
           </p>
           <div className='space-x-4'>
             <Link href='/login' className={cn(buttonVariants({ size: 'lg' }))}>
@@ -46,11 +45,6 @@ export default function IndexPage (): JSX.Element {
           <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
             Features
           </h2>
-          <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            This project is an experiment to see how a modern app, with features
-            like auth, subscriptions, API routes, and static pages would work in
-            Next.js 13 app dir.
-          </p>
         </div>
         <div className='mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3'>
           <div className='relative overflow-hidden rounded-lg border bg-background p-2'>
@@ -59,7 +53,7 @@ export default function IndexPage (): JSX.Element {
                 <path d='M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z' />
               </svg>
               <div className='space-y-2'>
-                <h3 className='font-bold'>Next.js 13</h3>
+                <h3 className='font-bold'>Next.js 14</h3>
                 <p className='text-sm text-muted-foreground'>
                   App dir, Routing, Layouts, Loading UI and API routes.
                 </p>
@@ -81,13 +75,11 @@ export default function IndexPage (): JSX.Element {
           </div>
           <div className='relative overflow-hidden rounded-lg border bg-background p-2'>
             <div className='flex h-[180px] flex-col justify-between rounded-md p-6'>
-              <svg viewBox='0 0 24 24' className='h-12 w-12 fill-current'>
-                <path d='M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z' />
-              </svg>
+              <svg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width={48} height={48} className='w-12 h-12 fill-current'><path d='M4.8 438.2A520.7 520.7 0 000 489.7h777.8c-2.7-5.3-6.4-10-10-14.7-133-171.8-204.5-157-306.9-161.3-34-1.4-57.2-2-193-2-72.7 0-151.7.2-228.6.4A621 621 0 0015 386.3h398.6v51.9H4.8zm779.1 103.5H.4c.8 13.8 2.1 27.5 4 41h723.4c32.2 0 50.3-18.3 56.1-41zM45 724.3s120 294.5 466.5 299.7c207 0 385-123 465.9-299.7H45z' fill='#000' /><path d='M511.5 0A512.2 512.2 0 0065.3 260.6l202.7-.2c158.4 0 164.2.6 195.2 2l19.1.6c66.7 2.3 148.7 9.4 213.2 58.2 35 26.5 85.6 85 115.7 126.5 27.9 38.5 35.9 82.8 17 125.2-17.5 39-55 62.2-100.4 62.2H16.7s4.2 18 10.6 37.8h970.6a510.4 510.4 0 0026.1-160.7A512.4 512.4 0 00511.5 0z' fill='#000' /></svg>
               <div className='space-y-2'>
                 <h3 className='font-bold'>Database</h3>
                 <p className='text-sm text-muted-foreground'>
-                  ORM using Prisma and deployed on PlanetScale.
+                  ORM using Prisma and deployed on Railway.
                 </p>
               </div>
             </div>
@@ -125,45 +117,6 @@ export default function IndexPage (): JSX.Element {
               </div>
             </div>
           </div>
-          <div className='relative overflow-hidden rounded-lg border bg-background p-2'>
-            <div className='flex h-[180px] flex-col justify-between rounded-md p-6'>
-              <svg viewBox='0 0 24 24' className='h-12 w-12 fill-current'>
-                <path d='M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z' />
-              </svg>
-              <div className='space-y-2'>
-                <h3 className='font-bold'>Subscriptions</h3>
-                <p className='text-sm text-muted-foreground'>
-                  Free and paid subscriptions using Stripe.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='mx-auto text-center md:max-w-[58rem]'>
-          <p className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            Taxonomy also includes a blog and a full-featured documentation site
-            built using Contentlayer and MDX.
-          </p>
-        </div>
-      </section>
-      <section id='open-source' className='container py-8 md:py-12 lg:py-24'>
-        <div className='mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center'>
-          <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
-            Proudly Open Source
-          </h2>
-          <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            Taxonomy is open source and powered by open source software. <br />{' '}
-            The code is available on{' '}
-            <Link
-              href={siteConfig.links.github}
-              target='_blank'
-              rel='noreferrer'
-              className='underline underline-offset-4'
-            >
-              GitHub
-            </Link>
-            .{' '}
-          </p>
         </div>
       </section>
     </>

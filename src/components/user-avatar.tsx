@@ -11,9 +11,9 @@ interface UserAvatarProps extends AvatarProps {
 export function UserAvatar ({ user, ...props }: UserAvatarProps): JSX.Element {
   return (
     <Avatar {...props}>
-      {user.image
+      {user.image !== null
         ? (
-          <AvatarImage alt='Picture' src={user.image} />
+          <AvatarImage alt={`Picture of ${user.name ?? 'user'}`} src={user.image} />
           )
         : (
           <AvatarFallback>

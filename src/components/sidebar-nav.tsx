@@ -42,14 +42,14 @@ export function DocsSidebarNavItems ({
   items,
   pathname
 }: DocsSidebarNavItemsProps): JSX.Element | null {
-  return items?.length
+  return items?.length > 0
     ? (
       <div className='grid grid-flow-row auto-rows-max text-sm'>
         {items.map((item, index) =>
-          !item.disabled && item.href
+          item.disabled !== undefined && item.href !== undefined
             ? (
               <Link
-                key={index}
+                key={`link-sidebar-${index}`}
                 href={item.href}
                 className={cn(
                   'flex w-full items-center rounded-md p-2 hover:underline',
@@ -57,14 +57,14 @@ export function DocsSidebarNavItems ({
                     'bg-muted': pathname === item.href
                   }
                 )}
-                target={item.external ? '_blank' : ''}
-                rel={item.external ? 'noreferrer' : ''}
+                target={item.external !== undefined ? '_blank' : ''}
+                rel={item.external !== undefined ? 'noreferrer' : ''}
               >
                 {item.title}
               </Link>
               )
             : (
-              <span className='flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60'>
+              <span key={`item-sidebar-${index}`} className='flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60'>
                 {item.title}
               </span>
               )

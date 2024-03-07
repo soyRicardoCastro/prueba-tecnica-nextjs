@@ -31,7 +31,7 @@ export default function RegisterPage (): JSX.Element {
               Create an account
             </h1>
             <p className='text-sm text-muted-foreground'>
-              Enter your email below to create your account
+              Lets signup with Github
             </p>
           </div>
           <UserAuthForm />
