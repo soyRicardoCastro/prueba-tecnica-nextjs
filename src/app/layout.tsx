@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: 'shadcn',
-      url: 'https://shadcn.com'
+      name: 'Ricardo Castro',
+      url: 'https://ricardodev.pro'
     }
   ],
   creator: 'shadcn',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og.jpg`],
-    creator: '@shadcn'
+    creator: '@imRicardoJS'
   },
   icons: {
     icon: '/favicon.ico',
