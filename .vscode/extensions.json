@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "tailwindcss.vscode-tailwindcss",
+    "standard.vscode-standard",
+    "Prisma.prisma",
+  ]
+}
