@@ -30,10 +30,10 @@ export function MobileNav ({ items, children }: MobileNavProps): JSX.Element {
           {items.map((item, index) => (
             <Link
               key={index}
-              href={item.disabled === undefined ? '#' : item.href}
+              href={item.disabled === true ? '#' : item.href}
               className={cn(
                 'flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline',
-                item.disabled === undefined && 'cursor-not-allowed opacity-60'
+                item.disabled === true && 'cursor-not-allowed opacity-60'
               )}
             >
               {item.title}

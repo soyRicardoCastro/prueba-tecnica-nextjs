@@ -1,9 +1,13 @@
+import { buttonVariants } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { cn } from '@/lib/utils'
 import React from 'react'
 
 const Contact = (): JSX.Element => {
   return (
     <>
-      <section className='relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]'>
+      <section className='relative z-10 overflow-hidden  py-20 dark:bg-dark lg:py-[120px]'>
         <div className='container'>
           <div className='-mx-4 flex flex-wrap lg:justify-between'>
             <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
@@ -111,7 +115,7 @@ const Contact = (): JSX.Element => {
               </div>
             </div>
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
-              <div className='relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12'>
+              <div className='relative rounded-lg p-8 shadow-lg dark:bg-dark-2 sm:p-12'>
                 <form>
                   <ContactInputBox
                     type='text'
@@ -137,7 +141,7 @@ const Contact = (): JSX.Element => {
                   <div>
                     <button
                       type='submit'
-                      className='w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90'
+                      className={cn(buttonVariants())}
                     >
                       Send Message
                     </button>
@@ -970,11 +974,10 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }: {
 }): JSX.Element => {
   return (
     <div className='mb-6'>
-      <textarea
+      <Textarea
         rows={row}
         placeholder={placeholder}
         name={name}
-        className='w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
         defaultValue={defaultValue}
       />
     </div>
@@ -984,11 +987,10 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }: {
 const ContactInputBox = ({ type, placeholder, name }: { type: string, placeholder: string, name: string }): JSX.Element => {
   return (
     <div className='mb-6'>
-      <input
+      <Input
         type={type}
         placeholder={placeholder}
         name={name}
-        className='w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
       />
     </div>
   )
